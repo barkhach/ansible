@@ -1,0 +1,7 @@
+---
+- hosts : webservers
+  tasks:
+   - name : i want to install git on ansible nodes
+     apt :
+      name : git
+      state : present
