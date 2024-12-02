@@ -1,7 +1,8 @@
 ---
-- hosts : webservers
+- hosts: webservers  # Remove extra space before the colon
+  become: yes        # Required if the installation needs sudo/root privileges
   tasks:
-   - name : i want to install git on ansible nodes
-     apt :
-      name : git
-      state : present
+    - name: Install Git on Ansible nodes
+      apt:
+        name: git
+        state: present
