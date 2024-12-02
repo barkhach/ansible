@@ -6,7 +6,6 @@
     apt : 
      name : git
      state : present
-
   - name : i want to restart the service
     services : 
      state : started
