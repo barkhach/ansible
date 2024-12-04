@@ -1,0 +1,8 @@
+---
+- hosts: all  # Remove extra space before the colon
+  become: yes        # Required if the installation needs sudo/root privileges
+  tasks:
+    - name: Install Git on Ansible nodes
+      apt:
+        name: git
+        state: present
