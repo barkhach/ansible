@@ -1,7 +1,7 @@
 ---
 - hosts : all
   tasks:
-   - name : git install already
+   - name : git installed
      apt :
        name : git
        state : present
